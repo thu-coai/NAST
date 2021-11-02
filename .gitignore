@@ -1,0 +1,4 @@
+./data/yelp
+./data/GYAFC_family
+./eval/model/*
+./styletransformer/*
