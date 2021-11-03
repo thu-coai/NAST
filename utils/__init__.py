@@ -16,6 +16,7 @@ from .optimizer import AdamW, RAdam
 from .operator_helper import reshape, cdist_nobatch, sequence_pooling, broadcast, unsqueeze, tensor, longtensor, onet, zerot, generateMask
 from .gumbel import gumbel_max, gumbel_max_with_mask, gumbel_softmax, recenter_gradient, RebarGradient, straight_max, cdist, onehot
 
+import numpy as np
 def padding_id(data, pad_value=0, dtype=int): # seqlen * batch
 	batch_size = len(data)
 	length = [len(d) for d in data]
